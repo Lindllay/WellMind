@@ -89,3 +89,21 @@ const overlapImgs = function () {
 overlapImgs();
 
 // FAQ implementation
+
+const faq = function () {
+  const faqItems = document.querySelectorAll(".faq-item");
+  const faqContainer = document.querySelector(".faq-container");
+
+  faqContainer.addEventListener("click", function (e) {
+    // Close all items
+    faqItems.forEach((item) => {
+      if (item !== e.target.closest(".faq-item")) item.classList.remove("open"); // Delete open class from every item, except from clicked item - because after deleting it, toggle function would add it again in the next step
+    });
+    // Open clicked item
+    const faqParent = e.target.closest(".faq-item");
+    faqParent.classList.toggle("open");
+    // Close opened item
+  });
+};
+
+faq();
