@@ -107,3 +107,29 @@ const faq = function () {
 };
 
 faq();
+
+// Sticky nav implementation
+
+const body = document.querySelector("body");
+const hero = document.querySelector(".section-hero");
+const navHeight = document
+  .querySelector(".header")
+  .getBoundingClientRect().height;
+
+const stickyNav = function (entries) {
+  const entry = entries[0];
+  console.log(entry);
+  console.log(body);
+  if (!entry.isIntersecting) body.classList.add("sticky");
+  if (entry.isIntersecting) body.classList.remove("sticky");
+};
+
+const heroObserver = new IntersectionObserver(stickyNav, {
+  rootMargin: `-64px`,
+  root: null,
+  treshold: 0,
+});
+
+heroObserver.observe(hero);
+
+// Revealing elements implementation

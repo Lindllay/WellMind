@@ -250,10 +250,6 @@ body {
   width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
-.benefits-row:first-child {
-  width: 100%;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
 
 .benefits-row:last-child {
   width: 100%;
@@ -650,4 +646,17 @@ body {
 
 .address a:link {
   margin-bottom: 0.5rem;
+}
+
+.sticky .header {
+  position: fixed;
+  background-color: #1d1d1dfa;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 6.4rem;
+  box-shadow: 10px 0 10px rgba(70, 70, 70, 0.541);
+}
+
+.sticky .section-hero {
 }
