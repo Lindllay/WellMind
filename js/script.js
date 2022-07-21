@@ -118,8 +118,6 @@ const navHeight = document
 
 const stickyNav = function (entries) {
   const entry = entries[0];
-  console.log(entry);
-  console.log(body);
   if (!entry.isIntersecting) body.classList.add("sticky");
   if (entry.isIntersecting) body.classList.remove("sticky");
 };
@@ -133,3 +131,24 @@ const heroObserver = new IntersectionObserver(stickyNav, {
 heroObserver.observe(hero);
 
 // Revealing elements implementation
+
+const allElements = document.querySelectorAll(".reveal-el");
+
+const revealElement = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+  if (entry.isIntersecting) {
+    entry.target.classList.remove("element-hidden");
+    observer.unobserve(entry.target);
+  }
+};
+
+const elementObserver = new IntersectionObserver(revealElement, {
+  threshold: 0.15,
+  root: null,
+});
+
+allElements.forEach((element) => {
+  elementObserver.observe(element);
+  element.classList.add("element-hidden");
+});
