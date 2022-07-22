@@ -146,7 +146,7 @@ body {
       rgba(19, 19, 19, 0.856),
       rgba(19, 16, 12, 0.8)
     ),
-    url("./img/hero.jpg");
+    url("../img/hero.jpg");
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -754,7 +754,7 @@ body {
 }
 
 .modal-img-container {
-  background: url("./img/intro-img.jpg");
+  background: url("../img/intro-img.jpg");
   background-position: center;
   background-size: cover;
   width: 90%;
