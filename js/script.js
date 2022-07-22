@@ -176,3 +176,10 @@ exitBtn.addEventListener("click", function () {
   overlayEl.classList.remove("overlay");
   modal.classList.add("hidden-modal");
 });
+
+// MOBILE NAVIGATION
+
+const mobileBtnNav = document.querySelector(".btn-mobile-nav");
+mobileBtnNav.addEventListener("click", function () {
+  document.querySelector(".header").classList.toggle("nav-open");
+});

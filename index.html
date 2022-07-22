@@ -17,15 +17,50 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script src="js/script.js" defer></script>
     <title>Document</title>
   </head>
   <body class="">
-    <header class="header">
+    <header class="header nav-open">
       <a href="#" class="logo">
         <img src="img/logos/logo.png" alt="logo" class="logo-img" />
         <p class="logo-text">Well<span class="logo-span">Mind</span></p>
       </a>
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon-mobile-nav"
+          viewBox="0 0 512 512"
+          name="menu-outline"
+        >
+          <title>Menu</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M80 160h352M80 256h352M80 352h352"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon-mobile-nav"
+          viewBox="0 0 512 512"
+          name="close-outline"
+        >
+          <title>Close</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M368 368L144 144M368 144L144 368"
+          />
+        </svg>
+      </button>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#section-how" class="main-nav-link">How it works</a></li>
@@ -202,15 +237,14 @@
         <div class="slider reveal-el">
           <div class="slide">
             <div class="testimonial">
-              <h3 class="testimonial-header">I absolutely love WellMind!</h3>
+              <h3 class="testimonial-header">I love WellMind!</h3>
               <blockquote class="testimonial-text">
                 Being able to talk to your therapist instantly at a moments
                 notice is wonderful. It’s incredible and it’s affordable and
                 convenient and it’s just... the best!! Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Provident maiores alias
                 possimus aperiam quisquam voluptatem et natus! Modi maiores
-                reiciendis consectetur, deleniti non atque aspernatur! Voluptas
-                facilis ratione totam reiciendis.
+                reiciendis consectetur, deleniti non atque aspernatur!
               </blockquote>
               <address class="testimonial-author testimonial-grid">
                 <img
@@ -252,8 +286,9 @@
                 I've engaged in therapy/counseling on-and-off for 20 years and
                 never has it been easier or better than with WellMind in the
                 past few months. Highly recommend. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Provident maiores alias possimus
-                aperiam quisquam voluptatem et natus!
+                consectetur adipisicing elit. Provident maiores alias sit amet
+                consectetur adipisicing possimus aperiam quisquam voluptatem et
+                natus!
               </blockquote>
               <address class="testimonial-author testimonial-grid">
                 <img
