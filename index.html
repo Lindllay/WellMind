@@ -36,7 +36,11 @@
             <a href="#section-testimonials" class="main-nav-link">Reviews</a>
           </li>
           <li><a href="#section-faq" class="main-nav-link">FAQ</a></li>
-          <li><a href="#" class="main-nav-link nav-sign-in btn">Sign In</a></li>
+          <li>
+            <a href="#" class="main-nav-link nav-sign-in btn sign-in-btn"
+              >Sign In</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -54,7 +58,7 @@
             online therapy, you’ll learn to discover and overcome these hurdles
             with the support of a licensed counselor.
           </h2>
-          <a href="#" class="btn hero-btn">Start Therapy</a>
+          <a href="#" class="btn hero-btn sign-in-btn">Start Therapy</a>
         </div>
         <div class="customer-logos container">
           <img src="img/logos/forbes-logo.png" class="customer-img" />
@@ -303,7 +307,9 @@
             quality you would expect from an in-office therapist, but with the
             ability to communicate when and how you want.
           </p>
-          <button class="therapists-btn">Get matched to a therapist</button>
+          <button class="therapists-btn sign-in-btn">
+            Get matched to a therapist
+          </button>
         </div>
       </section>
       <section class="section-faq" id="section-faq">
@@ -716,7 +722,7 @@
       </div>
     </footer>
     <div>
-      <div class="modal">
+      <div class="modal hidden-modal">
         <div class="modal-text-container">
           <h5 class="modal-header">
             We believe we should be looking after our mental health all the time
@@ -725,19 +731,19 @@
           <form class="modal-form">
             <div>
               <label for="fn">First Name</label>
-              <input type="text" id="fn" />
+              <input type="text" id="fn" required />
             </div>
             <div>
               <label for="ln">Last Name</label>
-              <input type="text" id="ln" />
+              <input type="text" id="ln" required />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
             </div>
             <div>
               <label for="pass">Password</label>
-              <input type="password" id="pass" />
+              <input type="password" id="pass" required />
             </div>
             <button class="modal-btn">Create account</button>
           </form>
@@ -760,7 +766,7 @@
           </svg>
         </div>
       </div>
-      <div class="overlay"></div>
+      <div class="overlay-el"></div>
     </div>
   </body>
 </html>

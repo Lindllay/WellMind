@@ -152,3 +152,27 @@ allElements.forEach((element) => {
   elementObserver.observe(element);
   element.classList.add("element-hidden");
 });
+
+// Modal
+
+const exitBtn = document.querySelector(".exit-icon");
+const overlayEl = document.querySelector(".overlay-el");
+const modal = document.querySelector(".modal");
+const signInBtn = document.querySelectorAll(".sign-in-btn");
+
+signInBtn.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    overlayEl.classList.add("overlay");
+    modal.classList.remove("hidden-modal");
+  });
+});
+
+overlayEl.addEventListener("click", function () {
+  overlayEl.classList.remove("overlay");
+  modal.classList.add("hidden-modal");
+});
+
+exitBtn.addEventListener("click", function () {
+  overlayEl.classList.remove("overlay");
+  modal.classList.add("hidden-modal");
+});

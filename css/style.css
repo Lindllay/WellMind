@@ -476,6 +476,7 @@ body {
 
 .therapist-img img {
   width: 100%;
+  pointer-events: none;
 }
 
 .therapists-text {
@@ -681,6 +682,7 @@ body {
   color: #3f250b;
   font-weight: 700;
   z-index: 99999;
+  transition: all 0.2s;
 }
 
 .modal-text-container {
@@ -726,8 +728,6 @@ body {
   cursor: pointer;
 }
 
-.modal-btn:hover {
-}
 .modal-btn:active {
   background: linear-gradient(to right bottom, #e47d00, #ca6f00);
 
@@ -738,7 +738,7 @@ body {
   background: url(/img/intro-img.jpg);
   background-position: center;
   background-size: cover;
-  width: 70%;
+  width: 90%;
   position: relative;
 }
 
@@ -749,7 +749,7 @@ body {
   transform: rotate(45deg);
   height: 5rem;
   width: 5rem;
-  color: #2b1907;
+  color: #3f2308;
   cursor: pointer;
 }
 
@@ -762,4 +762,10 @@ body {
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 10000;
+  transition: all 0.3s;
+}
+
+.hidden-modal {
+  opacity: 0;
+  visibility: hidden;
 }
