@@ -754,7 +754,7 @@ body {
 }
 
 .modal-img-container {
-  background: url(img/intro-img.jpg);
+  background: url("./img/intro-img.jpg");
   background-position: center;
   background-size: cover;
   width: 90%;
