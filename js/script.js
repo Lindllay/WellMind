@@ -179,7 +179,16 @@ exitBtn.addEventListener("click", function () {
 
 // MOBILE NAVIGATION
 
+const header = document.querySelector(".header");
 const mobileBtnNav = document.querySelector(".btn-mobile-nav");
 mobileBtnNav.addEventListener("click", function () {
-  document.querySelector(".header").classList.toggle("nav-open");
+  header.classList.toggle("nav-open");
+});
+
+const navLinks = document.querySelectorAll(".main-nav-link");
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", function () {
+    if (header.classList.contains("nav-open"))
+      header.classList.remove("nav-open");
+  });
 });
