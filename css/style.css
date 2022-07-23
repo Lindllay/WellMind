@@ -579,7 +579,7 @@ body {
 .faq-icon {
   height: 2.5rem;
   width: 2.5rem;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 .open .faq-icon {
   transform: rotate(90deg);
@@ -590,10 +590,11 @@ body {
   font-weight: 300;
   line-height: 1.8;
   margin-top: 1.8rem;
+  transition: all 0.5s ease-out;
 }
 .hidden {
   max-height: 0px;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
   overflow: hidden;
 }
 
