@@ -61,7 +61,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3.2rem;
-  width: 100%;
+  width: 100vw;
   height: 9.6rem;
   position: absolute;
 }
@@ -420,11 +420,18 @@ body {
   font-size: 2.5rem;
   background: #ff981b;
   color: white;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.041);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__btn svg {
+  height: 2rem;
+  width: 2rem;
 }
 
 .slider__btn--left {
@@ -676,7 +683,7 @@ body {
   top: 0;
   left: 0;
   height: 6.4rem;
-  box-shadow: 10px 0 10px rgba(70, 70, 70, 0.541);
+  box-shadow: 0px 3px 3px rgba(70, 70, 70, 0.164);
 }
 
 .reveal-el {
