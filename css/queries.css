@@ -201,12 +201,16 @@
   }
 
   .therapists-imgs {
-    transform: translateX(5rem);
+    transform: translateX(4rem);
     width: 100%;
   }
 
   .therapist-img {
     margin-bottom: 3.2rem;
+  }
+  .therapist-img:nth-child(6) {
+    position: absolute;
+    right: 9999px;
   }
   .therapist-img:nth-child(7) {
     position: absolute;
@@ -245,12 +249,12 @@
   }
 
   .testimonial-header {
-    font-size: 3.8rem;
+    font-size: 3.2em;
   }
   .testimonial-text {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin-bottom: 3.2rem;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 4.2rem;
   }
   .testimonial-header::before {
     font-size: 9.6rem;
@@ -263,7 +267,7 @@
   }
 
   .join {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     padding: 4.8rem 2.4rem;
   }
   .slider__btn--left {
@@ -372,6 +376,9 @@
     height: 2.5rem;
     width: 2.5rem;
   }
+  .therapists-imgs {
+    width: 90%;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
@@ -384,5 +391,8 @@
   }
   .hero-btn.sign-in-btn {
     padding: 1.2rem 1.8rem;
+  }
+  .customer-logos {
+    padding: 0.8rem 6.4rem;
   }
 }
