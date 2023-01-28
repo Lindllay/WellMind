@@ -1,9 +1,9 @@
 <h1>WellMind</h1>
-<h3>website providing online psychotherapeutic services</h3>
+<h3>Online psychotherapeutic services</h3>
 <p>Live: https://lindllay.github.io/WellMind/</p>
 
 
-<h4>This project was both designed and implemented by myself. it is a website offering online services of psychotherapy specialists. Applied design solutions:</h4>
+<h4>This project was both designed and implemented by myself. It is a website offering online services of psychotherapy specialists. Applied design solutions:</h4>
   
 <ul>
 <li>Modal window for Signing-Up</li>
