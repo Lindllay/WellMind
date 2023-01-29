@@ -721,11 +721,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 80rem;
-	background: linear-gradient(
-		to bottom,
-		rgb(255, 172, 94),
-		rgb(255, 207, 161)
-	);
+	background: linear-gradient(to bottom, rgb(255, 172, 94), rgb(255, 207, 161));
 	border-radius: 20px;
 	overflow: hidden;
 	color: #3f250b;
