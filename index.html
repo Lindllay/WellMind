@@ -1,841 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="img/logos/icon.png" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="img/logos/icon.png" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <script src="js/script.js" defer></script>
-    <title>WellMind</title>
-  </head>
-  <body class="">
-    <header class="header">
-      <a href="#" class="logo">
-        <img src="img/logos/logo.png" alt="logo" class="logo-img" />
-        <p class="logo-text">Well<span class="logo-span">Mind</span></p>
-      </a>
-      <button class="btn-mobile-nav">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon-mobile-nav"
-          viewBox="0 0 512 512"
-          name="menu-outline"
-        >
-          <title>Menu</title>
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-miterlimit="10"
-            stroke-width="32"
-            d="M80 160h352M80 256h352M80 352h352"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon-mobile-nav"
-          viewBox="0 0 512 512"
-          name="close-outline"
-        >
-          <title>Close</title>
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="32"
-            d="M368 368L144 144M368 144L144 368"
-          />
-        </svg>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a href="#section-how" class="main-nav-link">How it works</a></li>
-          <li>
-            <a href="#section-benefits" class="main-nav-link">Benefits</a>
-          </li>
-          <li>
-            <a href="#section-testimonials" class="main-nav-link">Reviews</a>
-          </li>
-          <li><a href="#section-faq" class="main-nav-link">FAQ</a></li>
-          <li>
-            <a href="#" class="main-nav-link nav-sign-in btn sign-in-btn"
-              >Sign In</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-hero" id="section-hero">
-        <div class="hero-content">
-          <h1 class="hero-heading-primary">
-            Online therapy with a licensed therapist
-          </h1>
-          <h2 class="hero-heading-secondary">
-            We all have thoughts and behaviors that hold us back. With Well<span
-              class="logo-span"
-              >Mind</span
-            >
-            online therapy, you’ll learn to discover and overcome these hurdles
-            with the support of a licensed counselor.
-          </h2>
-          <a href="#" class="btn hero-btn sign-in-btn">Start Therapy</a>
-        </div>
-        <div class="customer-logos container">
-          <img src="img/logos/forbes-logo.png" class="customer-img" />
-          <img src="img/logos/cnn-logo.png" class="customer-img" />
-          <img src="img/logos/fox-logo.png" class="customer-img" />
-          <img src="img/logos/mashable-logo.png" class="customer-img" />
-          <img src="img/logos/techcrunch-logo.png" class="customer-img" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/queries.css" />
+		<script src="js/script.js" defer></script>
+		<title>WellMind</title>
+	</head>
+	<body class="">
+		<header class="header">
+			<a href="#" class="logo">
+				<img src="img/logos/logo.png" alt="logo" class="logo-img" />
+				<p class="logo-text">Well<span class="logo-span">Mind</span></p>
+			</a>
+			<button class="btn-mobile-nav">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon-mobile-nav"
+					viewBox="0 0 512 512"
+					name="menu-outline"
+				>
+					<title>Menu</title>
+					<path
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-miterlimit="10"
+						stroke-width="32"
+						d="M80 160h352M80 256h352M80 352h352"
+					/>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon-mobile-nav"
+					viewBox="0 0 512 512"
+					name="close-outline"
+				>
+					<title>Close</title>
+					<path
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="32"
+						d="M368 368L144 144M368 144L144 368"
+					/>
+				</svg>
+			</button>
+			<nav class="main-nav">
+				<ul class="main-nav-list">
+					<li>
+						<a href="#section-how" class="main-nav-link"
+							>How it works</a
+						>
+					</li>
+					<li>
+						<a href="#section-benefits" class="main-nav-link"
+							>Benefits</a
+						>
+					</li>
+					<li>
+						<a href="#section-testimonials" class="main-nav-link"
+							>Reviews</a
+						>
+					</li>
+					<li>
+						<a href="#section-faq" class="main-nav-link">FAQ</a>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="main-nav-link nav-sign-in btn sign-in-btn"
+							>Sign In</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="section-hero" id="section-hero">
+				<div class="hero-content">
+					<h1 class="hero-heading-primary">
+						Online therapy with a licensed therapist
+					</h1>
+					<h2 class="hero-heading-secondary">
+						We all have thoughts and behaviors that hold us back.
+						With Well<span class="logo-span">Mind</span>
+						online therapy, you’ll learn to discover and overcome
+						these hurdles with the support of a licensed counselor.
+					</h2>
+					<a href="#" class="btn hero-btn sign-in-btn"
+						>Start Therapy</a
+					>
+				</div>
+				<div class="customer-logos container">
+					<img src="img/logos/forbes-logo.png" class="customer-img" />
+					<img src="img/logos/cnn-logo.png" class="customer-img" />
+					<img src="img/logos/fox-logo.png" class="customer-img" />
+					<img
+						src="img/logos/mashable-logo.png"
+						class="customer-img"
+					/>
+					<img
+						src="img/logos/techcrunch-logo.png"
+						class="customer-img"
+					/>
 
-          <img src="img/logos/today-logo.png" class="customer-img" />
-        </div>
-      </section>
-      <section class="section-how reveal-el" id="section-how">
-        <div class="how-content container">
-          <h2 class="how-header">Here's how it works</h2>
-          <div class="steps-container grid grid--3--cols">
-            <div class="how-step">
-              <img
-                class="step-img"
-                src="img/steps/consultation.png"
-                alt="illustration of a notebook with some notes in it"
-              />
-              <p class="step-heading">Initial consultation</p>
-              <p class="step-text">
-                Chat with a consultation therapist and answer a few questions to
-                get started.
-              </p>
-            </div>
-            <div class="how-step">
-              <img
-                class="step-img"
-                src="img/steps/match.png"
-                alt="illustration of several sheets containing personal information"
-              />
-              <p class="step-heading">Personalized match</p>
-              <p class="step-text">
-                We'll match you with a provider (typically within 48 hours).
-              </p>
-            </div>
-            <div class="how-step">
-              <img
-                class="step-img"
-                src="img/steps/start.png"
-                alt="illustration of a chat bubble and a camera"
-              />
-              <p class="step-heading">Start therapy</p>
-              <p class="step-text">
-                Begin the journey towards a happier and healthier you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-benefits" id="section-benefits">
-        <!-- First row -->
-        <div class="benefits-row benefits-row--1 reveal-el">
-          <div class="first-row">
-            <div class="benefits-text">
-              <h2 class="benefits-header">
-                The Best Online Therapists At Your Fingertips
-              </h2>
-              <p class="benefits-paragraph">
-                If you’re struggling, reeling under the strain of everyday life,
-                you probably need some consistent support. Therapy from
-                qualified professionals can help you deal with different mental
-                health concerns and related issues. A qualified therapist will
-                understand the root cause of your problems and offer nuanced
-                solutions.
-              </p>
-              <p class="benefits-paragraph">
-                One of the best ways to deal with this is to attend online
-                counseling. You don’t need to visit a therapist’s office or
-                waste time on your commute. In most cases, online therapy is
-                just as effective as traditional face-to-face therapy, which is
-                why so many people have made the switch in recent years.
-              </p>
-            </div>
-            <div class="benefits-img">
-              <img src="img/benefits/01.jpg" alt="" class="benefits-img" />
-            </div>
-          </div>
-        </div>
-        <!-- Second row -->
-        <div class="benefits-row benefits-row--2 reveal-el">
-          <div class="second-row">
-            <div class="benefits-img">
-              <img src="img/benefits/02.jpg" alt="" class="benefits-img" />
-            </div>
-            <div class="benefits-text">
-              <h2 class="benefits-header">Comfort and Privacy</h2>
-              <p class="benefits-paragraph">
-                One of the biggest advantages of attending sessions with online
-                therapists is that you can do so from the comfort of your home.
-                You can lock yourself in your bedroom or some private space and
-                just exchange messages with your therapist. A therapist’s office
-                provides a lot of privacy but online therapy offers a
-                combination of privacy and anonymity.
-              </p>
-              <p class="benefits-paragraph">
-                You don’t need to share your identity with the therapist if you
-                don’t wish to. This is particularly helpful for people in
-                high-risk situations that can’t afford to visit a therapist
-                openly. Those with social anxiety sometimes find it easier to
-                sell help this way.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Third row -->
+					<img src="img/logos/today-logo.png" class="customer-img" />
+				</div>
+			</section>
+			<section class="section-how reveal-el" id="section-how">
+				<div class="how-content container">
+					<h2 class="how-header">Here's how it works</h2>
+					<div class="steps-container grid grid--3--cols">
+						<div class="how-step">
+							<img
+								class="step-img"
+								src="img/steps/consultation.png"
+								alt="illustration of a notebook with some notes in it"
+							/>
+							<p class="step-heading">Initial consultation</p>
+							<p class="step-text">
+								Chat with a consultation therapist and answer a
+								few questions to get started.
+							</p>
+						</div>
+						<div class="how-step">
+							<img
+								class="step-img"
+								src="img/steps/match.png"
+								alt="illustration of several sheets containing personal information"
+							/>
+							<p class="step-heading">Personalized match</p>
+							<p class="step-text">
+								We'll match you with a provider (typically
+								within 48 hours).
+							</p>
+						</div>
+						<div class="how-step">
+							<img
+								class="step-img"
+								src="img/steps/start.png"
+								alt="illustration of a chat bubble and a camera"
+							/>
+							<p class="step-heading">Start therapy</p>
+							<p class="step-text">
+								Begin the journey towards a happier and
+								healthier you.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-benefits" id="section-benefits">
+				<!-- First row -->
+				<div class="benefits-row benefits-row--1 reveal-el">
+					<div class="first-row">
+						<div class="benefits-text">
+							<h2 class="benefits-header">
+								The Best Online Therapists At Your Fingertips
+							</h2>
+							<p class="benefits-paragraph">
+								If you’re struggling, reeling under the strain
+								of everyday life, you probably need some
+								consistent support. Therapy from qualified
+								professionals can help you deal with different
+								mental health concerns and related issues. A
+								qualified therapist will understand the root
+								cause of your problems and offer nuanced
+								solutions.
+							</p>
+							<p class="benefits-paragraph">
+								One of the best ways to deal with this is to
+								attend online counseling. You don’t need to
+								visit a therapist’s office or waste time on your
+								commute. In most cases, online therapy is just
+								as effective as traditional face-to-face
+								therapy, which is why so many people have made
+								the switch in recent years.
+							</p>
+						</div>
+						<div class="benefits-img">
+							<img
+								src="img/benefits/01.jpg"
+								alt=""
+								class="benefits-img"
+							/>
+						</div>
+					</div>
+				</div>
+				<!-- Second row -->
+				<div class="benefits-row benefits-row--2 reveal-el">
+					<div class="second-row">
+						<div class="benefits-img">
+							<img
+								src="img/benefits/02.jpg"
+								alt=""
+								class="benefits-img"
+							/>
+						</div>
+						<div class="benefits-text">
+							<h2 class="benefits-header">Comfort and Privacy</h2>
+							<p class="benefits-paragraph">
+								One of the biggest advantages of attending
+								sessions with online therapists is that you can
+								do so from the comfort of your home. You can
+								lock yourself in your bedroom or some private
+								space and just exchange messages with your
+								therapist. A therapist’s office provides a lot
+								of privacy but online therapy offers a
+								combination of privacy and anonymity.
+							</p>
+							<p class="benefits-paragraph">
+								You don’t need to share your identity with the
+								therapist if you don’t wish to. This is
+								particularly helpful for people in high-risk
+								situations that can’t afford to visit a
+								therapist openly. Those with social anxiety
+								sometimes find it easier to sell help this way.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Third row -->
 
-        <div class="benefits-row benefits-row--3 reveal-el">
-          <div class="third-row">
-            <div class="benefits-text">
-              <h2 class="benefits-header">Convenience and Accessibility</h2>
-              <p class="benefits-paragraph">
-                Attending sessions with an online therapist is both easy and
-                convenient. As long as you have an internet connection and a
-                device that can connect to the internet, you can access
-                therapists online. You can benefit from a wide range of
-                expertise even if you’re located in some remote region of your
-                country. This benefits people from small towns and villages
-                where their options are limited.
-              </p>
-              <p class="benefits-paragraph">
-                If you can’t find a therapist who can handle your mental health
-                concern in your area, you can find them online. eTherapyPro is
-                also more accessible to people with mobility issues or
-                disabilities because you don’t need to visit the therapist’s
-                office and can get therapy from the comfort of your home.
-              </p>
-            </div>
-            <div class="benefits-img">
-              <img src="img/benefits/03.jpg" alt="" class="benefits-img" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-testimonials" id="section-testimonials">
-        <h2 class="join">
-          Join over 1 million people who already improved their lives with us
-        </h2>
-        <div class="slider reveal-el">
-          <div class="slide">
-            <div class="testimonial">
-              <h3 class="testimonial-header">I love WellMind!</h3>
-              <blockquote class="testimonial-text">
-                Being able to talk to your therapist instantly at a moments
-                notice is wonderful. It’s incredible and it’s affordable and
-                convenient and it’s just... the best!! Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Provident maiores alias
-                possimus aperiam quisquam voluptatem et natus! Modi maiores
-                reiciendis consectetur, deleniti non atque aspernatur!
-              </blockquote>
-              <address class="testimonial-author testimonial-grid">
-                <img
-                  src="img/testimonials/jessica.jpg"
-                  alt=""
-                  class="testimonial-photo"
-                />
-                <h4 class="testimonial-name">Jessica Ramsey</h4>
-                <p class="testimonial-location">New York, USA</p>
-              </address>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="testimonial">
-              <h3 class="testimonial-header">WellMind is awesome</h3>
-              <blockquote class="testimonial-text">
-                I get to check in with my therapist every day. So far, I’ve been
-                working a lot to overcome my post traumatic stress and I feel
-                hopeful that I’ll be in a better place soon. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Provident maiores alias
-                possimus aperiam quisquam voluptatem et natus! Modi maiores
-                reiciendis consectetur, deleniti non atque aspernatur!
-              </blockquote>
-              <address class="testimonial-author testimonial-grid">
-                <img
-                  src="img/testimonials/jeff.jpg"
-                  alt=""
-                  class="testimonial-photo"
-                />
-                <h4 class="testimonial-name">Jeff Bezos</h4>
-                <p class="testimonial-location">Napoli, Italy</p>
-              </address>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="testimonial">
-              <h3 class="testimonial-header">This is so easy!</h3>
-              <blockquote class="testimonial-text">
-                I've engaged in therapy/counseling on-and-off for 20 years and
-                never has it been easier or better than with WellMind in the
-                past few months. Highly recommend. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Provident maiores alias sit amet
-                consectetur adipisicing possimus aperiam quisquam voluptatem et
-                natus!
-              </blockquote>
-              <address class="testimonial-author testimonial-grid">
-                <img
-                  src="img/testimonials/kate.jpg"
-                  alt=""
-                  class="testimonial-photo"
-                />
-                <h4 class="testimonial-name">Sarah Ellen</h4>
-                <p class="testimonial-location">Berlin, Germany</p>
-              </address>
-            </div>
-          </div>
-          <button class="slider__btn slider__btn--left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="ionicon"
-              viewBox="0 0 512 512"
-            >
-              <title>Chevron Back</title>
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="48"
-                d="M328 112L184 256l144 144"
-              />
-            </svg>
-          </button>
-          <button class="slider__btn slider__btn--right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="ionicon"
-              viewBox="0 0 512 512"
-            >
-              <title>Chevron Forward</title>
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="48"
-                d="M184 112l144 144-144 144"
-              />
-            </svg>
-          </button>
-          <div class="dots"></div>
-        </div>
-      </section>
-      <section class="section--therapists">
-        <div class="therapists-content reveal-el">
-          <h2 class="therapists-header">
-            Professional, licensed, and vetted therapists who you can trust
-          </h2>
-          <div class="therapists-imgs">
-            <div class="therapist-img">
-              <img src="img/therapists/1.jpg" alt="" />
-            </div>
-            <div class="therapist-img">
-              <img src="img/therapists/2.jpg" alt="" />
-            </div>
-            <div class="therapist-img">
-              <img src="img/therapists/3.jpg" alt="" />
-            </div>
-            <div class="therapist-img">
-              <img src="img/therapists/4.jpg" alt="" />
-            </div>
-            <div class="therapist-img">
-              <img src="img/therapists/5.jpg" alt="" />
-            </div>
-            <div class="therapist-img">
-              <img src="img/therapists/6.jpg" alt="" />
-            </div>
-            <div class="therapist-img">
-              <img src="img/therapists/7.jpg" alt="" />
-            </div>
-          </div>
-          <p class="therapists-text">
-            Tap into the world's largest network of licensed, accredited, and
-            experienced therapists who can help you with a range of issues
-            including depression, anxiety, relationships, trauma, grief, and
-            more. With our therapists, you get the same professionalism and
-            quality you would expect from an in-office therapist, but with the
-            ability to communicate when and how you want.
-          </p>
-          <button class="therapists-btn sign-in-btn">
-            Get matched to a therapist
-          </button>
-        </div>
-      </section>
-      <section class="section-faq" id="section-faq">
-        <h2 class="faq-header">Frequently Asked Questions</h2>
-        <div class="faq-container">
-          <div class="faq-item">
-            <p class="faq-question">Who are the therapists?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                Therapists on WellMind are registered, trained, and experienced
-                Practitioner Psychologists, Accredited Counsellors, or similar
-                applicable recognized professional certification. Therapists
-                must have a relevant academic degree in their field, at least 3
-                years of experience, and have to be qualified and accredited by
-                their respective professional organization after successfully
-                completing the necessary education, exams, training, practice,
-                and ongoing supervision requirements.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">Who will be helping me?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                After you sign up, we will match you to an available therapist
-                who fits your objectives, preferences, and the type of issues
-                you are dealing with. Different therapists have different
-                approaches and areas of focus, so it's important to find the
-                right person who can achieve the best results for you. We have
-                found that we are able to provide a successful match most of the
-                time; however, if you start the process and you feel your
-                therapist isn't a good fit for you, you may elect to be matched
-                to a different therapist.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">Is WellMind right for me?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                WellMind may be right for you if you're looking to improve the
-                quality of your life. Whenever there is anything that interferes
-                with your happiness or prevents you from achieving your goals,
-                we may be able to help. We also have therapists who specialize
-                in specific issues such as stress, anxiety, relationships,
-                parenting, depression, addictions, eating, sleeping, trauma,
-                anger, family conflicts, LGBT matters, grief, religion, self
-                esteem, and more.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">How much does it cost?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                The cost of therapy through WellMind ranges from €50 - €70 per
-                week (billed every 4 weeks) and it is based on your location,
-                preferences, and therapist availability. You can cancel your
-                membership at any time, for any reason.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">
-              After I sign up, how long until I'm matched with a therapist?
-            </p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">In most cases within 24 hours or less.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">
-              How will I communicate with my therapist?
-            </p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-                perspiciatis ex provident beatae, nesciunt illo ipsum totam
-                maiores architecto tenetur veniam est laborum neque recusandae
-                nam laboriosam ut quas doloremque velit facere exercitationem
-                autem! Recusandae, earum quisquam. Expedita ut sunt incidunt ad
-                optio sapiente hic ducimus perferendis ex dolorum eaque delectus
-                magni possimus alias nesciunt repellendus dolores, praesentium
-                nemo. Aut maxime dolorum culpa et rem placeat, est voluptatem
-                impedit! Voluptas, necessitatibus commodi nemo quia corrupti
-                magnam voluptate rem animi cumque natus consequatur laborum
-                similique optio voluptates error! Tempore explicabo corrupti
-                neque consectetur rerum quis perferendis sit, magnam natus
-                accusamus tempora.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">How long can I use WellMind?</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                This depends on your needs and varies a lot from one person to
-                another. Some people feel they get most of the value after just
-                a few weeks, while others prefer to stick to the program for an
-                extended period of time. This is completely up to you.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <p class="faq-question">
-              How can i be sure that this is an effective form of therapy?
-            </p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="192"
-              height="192"
-              fill="#000000"
-              viewBox="0 0 256 256"
-              class="faq-icon"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline
-                points="56 48 136 128 56 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-              <polyline
-                points="136 48 216 128 136 208"
-                fill="none"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-            <div class="hidden">
-              <p class="faq-answer">
-                There are many studies that confirm the effectiveness of the
-                online medium for making life changes. For example, a study
-                published by JMIR Publications and conducted by researchers from
-                University of California - Berkeley, University of California -
-                San Francisco, and the San Francisco General Hospital concluded
-                that "users of WellMind experienced significantly reduced
-                depression symptom severity after engaging with the platform."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="section-footer">
-      <div class="footer-container">
-        <div class="footer-logos-container">
-          <p class="footer-wm-logo">Well<span>Mind</span></p>
-          <div class="social-logos">
-            <svg
-              fill="#000000"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-              width="30px"
-              height="30px"
-              class="social-logo"
-            >
-              <path
-                d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"
-              />
-            </svg>
-            <svg
-              fill="#000000"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-              width="30px"
-              height="30px"
-              class="social-logo"
-            >
-              <path
-                d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
-              />
-            </svg>
-            <svg
-              fill="#000000"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 30 30"
-              width="30px"
-              height="30px"
-              class="social-logo"
-            >
-              <path
-                d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.464,12.535 c0.006,0.133,0.009,0.265,0.009,0.397c0,4.068-3.095,8.756-8.756,8.756c-1.739,0-3.356-0.509-4.717-1.383 c0.241,0.029,0.486,0.042,0.735,0.042c1.443,0,2.769-0.491,3.821-1.318c-1.347-0.025-2.484-0.915-2.875-2.137 c0.188,0.036,0.381,0.055,0.579,0.055c0.281,0,0.554-0.038,0.811-0.108c-1.408-0.282-2.469-1.526-2.469-3.017 c0-0.013,0-0.026,0-0.039c0.415,0.231,0.889,0.369,1.394,0.385c-0.825-0.551-1.369-1.494-1.369-2.561 c0-0.565,0.151-1.094,0.416-1.547c1.518,1.862,3.786,3.088,6.343,3.216c-0.052-0.225-0.079-0.46-0.079-0.701 c0-1.699,1.378-3.078,3.077-3.078c0.885,0,1.685,0.374,2.246,0.972c0.701-0.139,1.36-0.394,1.955-0.747 c-0.23,0.719-0.718,1.321-1.354,1.703c0.622-0.074,1.215-0.239,1.768-0.484C22.588,11.559,22.067,12.1,21.464,12.535z"
-              />
-            </svg>
-          </div>
-          <p class="copyright">
-            Copyright © 2022 by WellMind, Inc. All rights reserved.
-          </p>
-        </div>
-        <address class="footer-contact-container">
-          <h5 class="footer-header">Contact us</h5>
-          <p class="footer-text">
-            623 Orcan St., 3rd Floor, New York,<br />
-            DE 11207
-          </p>
-          <div class="address">
-            <a href="tel:232-323-5322" class="footer-link">232-323-5322</a>
-            <a href="mailto:wellmind@ny.com" class="footer-link"
-              >wellmind@ny.com</a
-            >
-          </div>
-        </address>
-        <div class="footer-account-container">
-          <h5 class="footer-header">Account</h5>
-          <a href="#" class="footer-link">Create account</a>
-          <a href="#" class="footer-link">Sign in</a>
-          <a href="#" class="footer-link">iOS app</a>
-          <a href="#" class="footer-link">Android app</a>
-        </div>
+				<div class="benefits-row benefits-row--3 reveal-el">
+					<div class="third-row">
+						<div class="benefits-text">
+							<h2 class="benefits-header">
+								Convenience and Accessibility
+							</h2>
+							<p class="benefits-paragraph">
+								Attending sessions with an online therapist is
+								both easy and convenient. As long as you have an
+								internet connection and a device that can
+								connect to the internet, you can access
+								therapists online. You can benefit from a wide
+								range of expertise even if you’re located in
+								some remote region of your country. This
+								benefits people from small towns and villages
+								where their options are limited.
+							</p>
+							<p class="benefits-paragraph">
+								If you can’t find a therapist who can handle
+								your mental health concern in your area, you can
+								find them online. eTherapyPro is also more
+								accessible to people with mobility issues or
+								disabilities because you don’t need to visit the
+								therapist’s office and can get therapy from the
+								comfort of your home.
+							</p>
+						</div>
+						<div class="benefits-img">
+							<img
+								src="img/benefits/03.jpg"
+								alt=""
+								class="benefits-img"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-testimonials" id="section-testimonials">
+				<h2 class="join">
+					Join over 1 million people who already improved their lives
+					with us
+				</h2>
+				<div class="slider reveal-el">
+					<div class="slide">
+						<div class="testimonial">
+							<h3 class="testimonial-header">I love WellMind!</h3>
+							<blockquote class="testimonial-text">
+								Being able to talk to your therapist instantly
+								at a moments notice is wonderful. It’s
+								incredible and it’s affordable and convenient
+								and it’s just... the best!! Lorem ipsum dolor
+								sit amet consectetur adipisicing elit. Provident
+								maiores alias possimus aperiam quisquam
+								voluptatem et natus! Modi maiores reiciendis
+								consectetur, deleniti non atque aspernatur!
+							</blockquote>
+							<address
+								class="testimonial-author testimonial-grid"
+							>
+								<img
+									src="img/testimonials/jessica.jpg"
+									alt=""
+									class="testimonial-photo"
+								/>
+								<h4 class="testimonial-name">Jessica Ramsey</h4>
+								<p class="testimonial-location">
+									New York, USA
+								</p>
+							</address>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="testimonial">
+							<h3 class="testimonial-header">
+								WellMind is awesome
+							</h3>
+							<blockquote class="testimonial-text">
+								I get to check in with my therapist every day.
+								So far, I’ve been working a lot to overcome my
+								post traumatic stress and I feel hopeful that
+								I’ll be in a better place soon. Lorem ipsum
+								dolor sit amet consectetur adipisicing elit.
+								Provident maiores alias possimus aperiam
+								quisquam voluptatem et natus! Modi maiores
+								reiciendis consectetur, deleniti non atque
+								aspernatur!
+							</blockquote>
+							<address
+								class="testimonial-author testimonial-grid"
+							>
+								<img
+									src="img/testimonials/jeff.jpg"
+									alt=""
+									class="testimonial-photo"
+								/>
+								<h4 class="testimonial-name">Jeff Bezos</h4>
+								<p class="testimonial-location">
+									Napoli, Italy
+								</p>
+							</address>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="testimonial">
+							<h3 class="testimonial-header">This is so easy!</h3>
+							<blockquote class="testimonial-text">
+								I've engaged in therapy/counseling on-and-off
+								for 20 years and never has it been easier or
+								better than with WellMind in the past few
+								months. Highly recommend. Lorem ipsum dolor sit
+								amet consectetur adipisicing elit. Provident
+								maiores alias sit amet consectetur adipisicing
+								possimus aperiam quisquam voluptatem et natus!
+							</blockquote>
+							<address
+								class="testimonial-author testimonial-grid"
+							>
+								<img
+									src="img/testimonials/kate.jpg"
+									alt=""
+									class="testimonial-photo"
+								/>
+								<h4 class="testimonial-name">Sarah Ellen</h4>
+								<p class="testimonial-location">
+									Berlin, Germany
+								</p>
+							</address>
+						</div>
+					</div>
+					<button class="slider__btn slider__btn--left">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="ionicon"
+							viewBox="0 0 512 512"
+						>
+							<title>Chevron Back</title>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="48"
+								d="M328 112L184 256l144 144"
+							/>
+						</svg>
+					</button>
+					<button class="slider__btn slider__btn--right">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="ionicon"
+							viewBox="0 0 512 512"
+						>
+							<title>Chevron Forward</title>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="48"
+								d="M184 112l144 144-144 144"
+							/>
+						</svg>
+					</button>
+					<div class="dots"></div>
+				</div>
+			</section>
+			<section class="section--therapists">
+				<div class="therapists-content reveal-el">
+					<h2 class="therapists-header">
+						Professional, licensed, and vetted therapists who you
+						can trust
+					</h2>
+					<div class="therapists-imgs">
+						<div class="therapist-img">
+							<img src="img/therapists/1.jpg" alt="" />
+						</div>
+						<div class="therapist-img">
+							<img src="img/therapists/2.jpg" alt="" />
+						</div>
+						<div class="therapist-img">
+							<img src="img/therapists/3.jpg" alt="" />
+						</div>
+						<div class="therapist-img">
+							<img src="img/therapists/4.jpg" alt="" />
+						</div>
+						<div class="therapist-img">
+							<img src="img/therapists/5.jpg" alt="" />
+						</div>
+						<div class="therapist-img">
+							<img src="img/therapists/6.jpg" alt="" />
+						</div>
+						<div class="therapist-img">
+							<img src="img/therapists/7.jpg" alt="" />
+						</div>
+					</div>
+					<p class="therapists-text">
+						Tap into the world's largest network of licensed,
+						accredited, and experienced therapists who can help you
+						with a range of issues including depression, anxiety,
+						relationships, trauma, grief, and more. With our
+						therapists, you get the same professionalism and quality
+						you would expect from an in-office therapist, but with
+						the ability to communicate when and how you want.
+					</p>
+					<button class="therapists-btn sign-in-btn">
+						Get matched to a therapist
+					</button>
+				</div>
+			</section>
+			<section class="section-faq" id="section-faq">
+				<h2 class="faq-header">Frequently Asked Questions</h2>
+				<div class="faq-container">
+					<div class="faq-item">
+						<p class="faq-question">Who are the therapists?</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								Therapists on WellMind are registered, trained,
+								and experienced Practitioner Psychologists,
+								Accredited Counsellors, or similar applicable
+								recognized professional certification.
+								Therapists must have a relevant academic degree
+								in their field, at least 3 years of experience,
+								and have to be qualified and accredited by their
+								respective professional organization after
+								successfully completing the necessary education,
+								exams, training, practice, and ongoing
+								supervision requirements.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">Who will be helping me?</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								After you sign up, we will match you to an
+								available therapist who fits your objectives,
+								preferences, and the type of issues you are
+								dealing with. Different therapists have
+								different approaches and areas of focus, so it's
+								important to find the right person who can
+								achieve the best results for you. We have found
+								that we are able to provide a successful match
+								most of the time; however, if you start the
+								process and you feel your therapist isn't a good
+								fit for you, you may elect to be matched to a
+								different therapist.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">Is WellMind right for me?</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								WellMind may be right for you if you're looking
+								to improve the quality of your life. Whenever
+								there is anything that interferes with your
+								happiness or prevents you from achieving your
+								goals, we may be able to help. We also have
+								therapists who specialize in specific issues
+								such as stress, anxiety, relationships,
+								parenting, depression, addictions, eating,
+								sleeping, trauma, anger, family conflicts, LGBT
+								matters, grief, religion, self esteem, and more.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">How much does it cost?</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								The cost of therapy through WellMind ranges from
+								€50 - €70 per week (billed every 4 weeks) and it
+								is based on your location, preferences, and
+								therapist availability. You can cancel your
+								membership at any time, for any reason.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">
+							After I sign up, how long until I'm matched with a
+							therapist?
+						</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								In most cases within 24 hours or less.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">
+							How will I communicate with my therapist?
+						</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Harum perspiciatis ex
+								provident beatae, nesciunt illo ipsum totam
+								maiores architecto tenetur veniam est laborum
+								neque recusandae nam laboriosam ut quas
+								doloremque velit facere exercitationem autem!
+								Recusandae, earum quisquam. Expedita ut sunt
+								incidunt ad optio sapiente hic ducimus
+								perferendis ex dolorum eaque delectus magni
+								possimus alias nesciunt repellendus dolores,
+								praesentium nemo. Aut maxime dolorum culpa et
+								rem placeat, est voluptatem impedit! Voluptas,
+								necessitatibus commodi nemo quia corrupti magnam
+								voluptate rem animi cumque natus consequatur
+								laborum similique optio voluptates error!
+								Tempore explicabo corrupti neque consectetur
+								rerum quis perferendis sit, magnam natus
+								accusamus tempora.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">How long can I use WellMind?</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								This depends on your needs and varies a lot from
+								one person to another. Some people feel they get
+								most of the value after just a few weeks, while
+								others prefer to stick to the program for an
+								extended period of time. This is completely up
+								to you.
+							</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<p class="faq-question">
+							How can i be sure that this is an effective form of
+							therapy?
+						</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="192"
+							height="192"
+							fill="#000000"
+							viewBox="0 0 256 256"
+							class="faq-icon"
+						>
+							<rect width="256" height="256" fill="none"></rect>
+							<polyline
+								points="56 48 136 128 56 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+							<polyline
+								points="136 48 216 128 136 208"
+								fill="none"
+								stroke="#000000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="16"
+							></polyline>
+						</svg>
+						<div class="hidden">
+							<p class="faq-answer">
+								There are many studies that confirm the
+								effectiveness of the online medium for making
+								life changes. For example, a study published by
+								JMIR Publications and conducted by researchers
+								from University of California - Berkeley,
+								University of California - San Francisco, and
+								the San Francisco General Hospital concluded
+								that "users of WellMind experienced
+								significantly reduced depression symptom
+								severity after engaging with the platform."
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="section-footer">
+			<div class="footer-container">
+				<div class="footer-logos-container">
+					<p class="footer-wm-logo">Well<span>Mind</span></p>
+					<div class="social-logos">
+						<svg
+							fill="#000000"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 30 30"
+							width="30px"
+							height="30px"
+							class="social-logo"
+						>
+							<path
+								d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"
+							/>
+						</svg>
+						<svg
+							fill="#000000"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 30 30"
+							width="30px"
+							height="30px"
+							class="social-logo"
+						>
+							<path
+								d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+							/>
+						</svg>
+						<svg
+							fill="#000000"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 30 30"
+							width="30px"
+							height="30px"
+							class="social-logo"
+						>
+							<path
+								d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.464,12.535 c0.006,0.133,0.009,0.265,0.009,0.397c0,4.068-3.095,8.756-8.756,8.756c-1.739,0-3.356-0.509-4.717-1.383 c0.241,0.029,0.486,0.042,0.735,0.042c1.443,0,2.769-0.491,3.821-1.318c-1.347-0.025-2.484-0.915-2.875-2.137 c0.188,0.036,0.381,0.055,0.579,0.055c0.281,0,0.554-0.038,0.811-0.108c-1.408-0.282-2.469-1.526-2.469-3.017 c0-0.013,0-0.026,0-0.039c0.415,0.231,0.889,0.369,1.394,0.385c-0.825-0.551-1.369-1.494-1.369-2.561 c0-0.565,0.151-1.094,0.416-1.547c1.518,1.862,3.786,3.088,6.343,3.216c-0.052-0.225-0.079-0.46-0.079-0.701 c0-1.699,1.378-3.078,3.077-3.078c0.885,0,1.685,0.374,2.246,0.972c0.701-0.139,1.36-0.394,1.955-0.747 c-0.23,0.719-0.718,1.321-1.354,1.703c0.622-0.074,1.215-0.239,1.768-0.484C22.588,11.559,22.067,12.1,21.464,12.535z"
+							/>
+						</svg>
+					</div>
+					<p class="copyright">
+						Copyright © 2022 by WellMind, Inc. All rights reserved.
+					</p>
+				</div>
+				<address class="footer-contact-container">
+					<h5 class="footer-header">Contact us</h5>
+					<p class="footer-text">
+						623 Orcan St., 3rd Floor, New York,<br />
+						DE 11207
+					</p>
+					<div class="address">
+						<a href="tel:232-323-5322" class="footer-link"
+							>232-323-5322</a
+						>
+						<a href="mailto:wellmind@ny.com" class="footer-link"
+							>wellmind@ny.com</a
+						>
+					</div>
+				</address>
+				<div class="footer-account-container">
+					<h5 class="footer-header">Account</h5>
+					<a href="#" class="footer-link">Create account</a>
+					<a href="#" class="footer-link">Sign in</a>
+					<a href="#" class="footer-link">iOS app</a>
+					<a href="#" class="footer-link">Android app</a>
+				</div>
 
-        <div class="footer-company-container">
-          <h5 class="footer-header">Company</h5>
-          <a href="#" class="footer-link">About WellMind</a>
-          <a href="#" class="footer-link">For Business</a>
-          <a href="#" class="footer-link">Partners</a>
-          <a href="#" class="footer-link">Careers</a>
-        </div>
-        <div class="footer-resources-container">
-          <h5 class="footer-header">Resources</h5>
-          <a href="#" class="footer-link">Help center</a>
-          <a href="#" class="footer-link">Privacy & terms</a>
-        </div>
-      </div>
-    </footer>
-    <div>
-      <div class="modal hidden-modal">
-        <div class="modal-text-container">
-          <h5 class="modal-header">
-            We believe we should be looking after our mental health all the time
-            — even when we’re in a good place.
-          </h5>
-          <form class="modal-form">
-            <div>
-              <label for="fn">First Name</label>
-              <input type="text" id="fn" required />
-            </div>
-            <div>
-              <label for="ln">Last Name</label>
-              <input type="text" id="ln" required />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" required />
-            </div>
-            <div>
-              <label for="pass">Password</label>
-              <input type="password" id="pass" required />
-            </div>
-            <button class="modal-btn">Create account</button>
-          </form>
-        </div>
-        <div class="modal-img-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="exit-icon"
-            viewBox="0 0 512 512"
-          >
-            <title>Add</title>
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-              d="M256 112v288M400 256H112"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="overlay-el"></div>
-    </div>
-  </body>
+				<div class="footer-company-container">
+					<h5 class="footer-header">Company</h5>
+					<a href="#" class="footer-link">About WellMind</a>
+					<a href="#" class="footer-link">For Business</a>
+					<a href="#" class="footer-link">Partners</a>
+					<a href="#" class="footer-link">Careers</a>
+				</div>
+				<div class="footer-resources-container">
+					<h5 class="footer-header">Resources</h5>
+					<a href="#" class="footer-link">Help center</a>
+					<a href="#" class="footer-link">Privacy & terms</a>
+				</div>
+			</div>
+		</footer>
+		<div>
+			<div class="modal hidden-modal">
+				<div class="modal-text-container">
+					<h5 class="modal-header">
+						We believe we should be looking after our mental health
+						all the time — even when we’re in a good place.
+					</h5>
+					<form class="modal-form">
+						<div>
+							<label for="fn">First Name</label>
+							<input type="text" id="fn" required />
+						</div>
+						<div>
+							<label for="ln">Last Name</label>
+							<input type="text" id="ln" required />
+						</div>
+						<div>
+							<label for="email">Email</label>
+							<input type="email" id="email" required />
+						</div>
+						<div>
+							<label for="pass">Password</label>
+							<input type="password" id="pass" required />
+						</div>
+						<button class="modal-btn">Create account</button>
+					</form>
+				</div>
+				<div class="modal-img-container">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="exit-icon"
+						viewBox="0 0 512 512"
+					>
+						<title>Add</title>
+						<path
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="32"
+							d="M256 112v288M400 256H112"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="overlay-el"></div>
+		</div>
+	</body>
 </html>
