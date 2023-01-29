@@ -16,7 +16,7 @@
 Layout is optimalized for the app depending on device's screen size
 
 Built with:
-<strong>JS, SCSS, HTML, Figma</strong>
+<strong>JS, CSS, HTML, Figma</strong>
 
 <h2>Screenshots</h2>
 
